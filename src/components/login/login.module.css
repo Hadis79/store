@@ -1,0 +1,121 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mainContentLogin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8% 8%;
+    column-gap: 20px;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.column1 h2,
+.column2 h2 {
+    margin-bottom: 20px;
+}
+
+.column1 p {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.createAccountLink a {
+    text-decoration: none;
+    padding: 10px;
+    color: beige;
+    background-color: var(--secondary);
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.createAccountLink a:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.column2 p {
+    margin-top: 20px;
+    color: #333
+}
+
+.yourInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+    color: red;
+    border-radius: 5px;
+}
+
+.yourInfo .userName,
+.yourInfo .password {
+    display: flex;
+    align-items: baseline;
+}
+
+.yourInfo .userName p,
+.yourInfo .password p {
+    margin: 2px 8px;
+}
+
+.formItem {
+    list-style: none;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.formItem input:focus {
+    border: 2px solid var(--light-secondary);
+    outline: var(--light-secondary)
+}
+
+.formItem label {
+    color: var(--primary);
+}
+
+.inputs input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.formItem.btnLogin {
+    display: flex;
+    align-items: baseline;
+}
+
+.formItem.btnLogin p {
+    color: var(--secondary);
+}
+
+.formItem.btnLogin button {
+    margin-left: 2%;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+
+.formItem.btnLogin button:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .mainContentLogin {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .column2 {
+        margin-top: 60px;
+    }
+}

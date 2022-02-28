@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --primary: #9F8189;
+    --secondary: #F3ABB6;
+    --light-secondary: #FFCAD4;
+    --light-begie: #FFE6D9;
+    --light: #FBECE5;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    background-color: #f8f8f8;
+    max-width: 100%;
+    position: relative;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+/* scrollTop */
+
+.scrollTop i {
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    background: var(--secondary);
+    color: var(--light);
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+    cursor: pointer;
+}
